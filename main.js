@@ -25,9 +25,7 @@ $(document).ready(function(){
             allanswers.append("<option value=\"\"></option>")
 
             for (i=0; i < suggestions.length; i++) {
-                if (usedIndices.has(parseInt(suggestions[i]["index"]))) {
-                    allanswers.append("<option value=\""+suggestions[i]["index"]+"\">"+suggestions[i]["name"]+"</option>")
-                }
+                allanswers.append("<option value=\""+suggestions[i]["index"]+"\">"+suggestions[i]["name"]+"</option>")
             }
             
             allanswers.select2({width: "10em"})

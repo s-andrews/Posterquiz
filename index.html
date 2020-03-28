@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Poster Quiz</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/quiz.css">
+
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+        <h1>Musicals Posters Quiz</h1>
+        <p>Did they waste their marketing budget...</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+
+            <div class="col-md-8">
+                <!-- The main content for the quiz -->
+
+                <p>
+                    A show's not a show if no one turns up to see it, so getting your publicity and
+                    marketing right is one of the most important jobs in a company.  Professional shows
+                    spend huge amounts to promote their shows, but how memorable are the iconic images
+                    they produce?
+                </p>
+
+                <p>
+                    Below are a selection of posters for famous shows, but with the name of the show
+                    removed.  How memorable are the designs when they're not shouting the name of the
+                    show at you?  Let's see how well you do.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+            <div class="col-md-8" id="posters">
+                
+
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+            <div class="col-md-8 text-center">
+                <button id="answercheck" class="btn btn-success">Check my answers</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fadediv"></div>
+
+    <div id="answerdiv">
+        <h1 class="text-center">Your score was <span id="finalscore">0</span> out of 20!</h1>
+
+        <p class="text-center" id="sarkycomment">
+            You are immune to advertising's allure.
+        </p>
+
+        <p class="text-center">
+            <button id="changeanswers" class="btn playagain">Change my Answers</button>
+            <button id="playagain" class="btn playagain">Play Again</button>
+        </p>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="main.js"></script>
+
+    </body>
+</html>
